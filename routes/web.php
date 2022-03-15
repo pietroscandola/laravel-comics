@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Characters
-Route::get('/characters', function () {
+Route::get('/', function () {
     return view('characters');
-})->name('characters');
+})->name('home');
 
 // Comics
 Route::get('/comics', function () {
@@ -53,10 +53,10 @@ Route::get('/fans', function () {
     return view('fans');
 })->name('fans');
 
-// Fans
-Route::get('/fans', function () {
-    return view('fans');
-})->name('fans');
+// News
+Route::get('/news', function () {
+    return view('news');
+})->name('news');
 
 // Shop
 Route::get('/shop', function () {
