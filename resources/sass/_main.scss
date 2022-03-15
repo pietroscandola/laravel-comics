@@ -1,0 +1,78 @@
+.bg-black {
+    background-color: #1c1c1c;
+}
+
+.bg-image {
+    background-image: url("../images/jumbotron.jpg");
+    min-height: 400px;
+    background-size: cover;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    .card {
+        flex-basis: calc(100% / 6);
+        padding: 10px;
+        figure {
+            overflow: hidden;
+            width: 180px;
+            height: 180px;
+        }
+        h4 {
+            color: white;
+            padding-top: 20px;
+        }
+    }
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+    top: -25px;
+    left: 0;
+}
+
+.bg-lightblue {
+    background-color: dodgerblue;
+    .d-flex {
+        display: flex;
+    }
+    ul {
+        padding: 50px 0;
+        justify-content: center;
+    }
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        margin: 0 30px;
+    }
+    img {
+        height: 50px;
+    }
+}
