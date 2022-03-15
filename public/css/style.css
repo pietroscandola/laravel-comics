@@ -9,6 +9,21 @@
   margin: 0 auto;
 }
 
+.top-header {
+  background-color: dodgerblue;
+  padding: 5px 0;
+}
+.top-header .container {
+  display: flex;
+  justify-content: flex-end;
+}
+.top-header .container a {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
 header img {
   width: 100%;
 }
@@ -31,7 +46,7 @@ header .col-right {
 header .col-left figure {
   display: flex;
   justify-content: flex-start;
-  align-items: start;
+  align-items: flex-start;
 }
 header li {
   border-bottom: 5px solid transparent;
@@ -51,6 +66,10 @@ header li a {
 header input {
   border: none;
   border-bottom: 2px solid dodgerblue;
+  text-align: end;
+}
+header input:focus-visible {
+  outline: 0;
 }
 
 footer {

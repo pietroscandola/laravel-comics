@@ -1,3 +1,9 @@
+<div class="top-header">
+    <div class="container">
+        <a href="#">DC POWER™VISA®</a>
+        <a href="#">ADDITIONAL DC SITES▼</a>
+    </div>
+</div>
 <header class="bg-white">
     <div class="container">            
         <nav>
