@@ -1,3 +1,8 @@
+@php
+$links = config('main_menu');
+
+@endphp
+
 <div class="top-header">
     <div class="container">
         <a href="#">DC POWER™VISA®</a>
@@ -15,36 +20,11 @@
                 </div>
                 <div class="col-center">
                   <ul class="d-flex">
-                    <li>
-                        <a href="{{ route('home') }}">CHARACTERS</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('comics') }}">COMICS</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('movies') }}">MOVIES</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('tv') }}">TV</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('games') }}">GAMES</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('collectibles') }}">COLLECTIBLES</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('videos') }}">VIDEOS</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('fans') }}">FANS</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('news') }}">NEWS</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('shop') }}">SHOP</a>
-                    </li>
+                      @foreach($links as $link)
+                        <li class="{{ request()->routeIs($link['route_name']) ? 'active' : '' }}">
+                            <a href="{{ route($link['route_name']) }}">{{ $link['text']}}</a>
+                        </li>
+                      @endforeach                                                          
                   </ul>
                 </div>
                 <div class="col-right">
@@ -53,4 +33,5 @@
             </div>
         </nav>
     </div>
+    <section class="bg-image"></section>
 </header>  

@@ -6,8 +6,7 @@
 @section('title', 'Comics')
 
 @section('content')
-<main>
-    <section class="bg-image"></section>
+<main>    
     <section class="bg-black">
       <div class="container pos-relative">
 
@@ -55,6 +54,7 @@
           </ul>
         </div>
       </section>
+      
   </main>
 
 @endsection
