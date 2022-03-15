@@ -84,6 +84,35 @@ footer .col {
   margin-right: 30px;
 }
 
+.bg-bottomfooter {
+  background-color: #303030;
+}
+.bg-bottomfooter .row {
+  display: flex;
+  padding: 30px 0;
+  justify-content: space-between;
+}
+.bg-bottomfooter #sign {
+  padding: 15px 10px;
+  border: 3px solid #1168b8;
+  color: white;
+}
+.bg-bottomfooter #follow {
+  color: dodgerblue;
+}
+.bg-bottomfooter .col-9 {
+  display: flex;
+  align-items: center;
+}
+.bg-bottomfooter ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0 20px;
+}
+.bg-bottomfooter li {
+  padding: 0 10px;
+}
+
 .bg-black {
   background-color: #1c1c1c;
 }

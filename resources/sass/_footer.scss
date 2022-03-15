@@ -28,3 +28,32 @@ footer {
         margin-right: 30px;
     }
 }
+
+.bg-bottomfooter {
+    background-color: #303030;
+    .row {
+        display: flex;
+        padding: 30px 0;
+        justify-content: space-between;
+    }
+    #sign {
+        padding: 15px 10px;
+        border: 3px solid #1168b8;
+        color: white;
+    }
+    #follow {
+        color: dodgerblue;
+    }
+    .col-9 {
+        display: flex;
+        align-items: center;
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0 20px;
+    }
+    li {
+        padding: 0 10px;
+    }
+}

@@ -52,4 +52,24 @@
         <div class="col" id="dc-logo"></div>            
       </div>      
     </div>
+
+    <div class="bg-bottomfooter">
+      <div class="container">
+          <div class="row">
+              <div class="col-3">
+                <h4 id="sign">SIGN-UP NOW!</h4>
+              </div>
+              <div class="col-9">
+                  <h4 id="follow">FOLLOW US</h4>
+                  <ul>
+                      <li><img src="../images/footer-facebook.png" alt="Facebook"></li>
+                      <li><img src="../images/footer-twitter.png" alt="Twitter"></li>
+                      <li><img src="../images/footer-youtube.png" alt="YouTube"></li>
+                      <li><img src="../images/footer-pinterest.png" alt="Pinterest"></li>
+                      <li><img src="../images/footer-periscope.png" alt="Periscope"></li>                                           
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
 </footer>
