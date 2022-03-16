@@ -90,10 +90,34 @@
                     </div>
                 </div>  
             </div>
-
         </div>
+
+        <div class="bg-gray">
+            <div class="container">
+                <ul class="lista">
+                  <li  class="d-flex">
+                    <a class="tag" href="#">DIGITAL COMICS</a>
+                    <img class="dimension-img" src="{{asset('images/buy-comics-digital-comics.png')}}" alt="DIGITAL COMICS">                    
+                  </li>                   
+                  <li  class="d-flex">
+                    <a class="tag" href="#">DC MERCHANDISE</a>
+                    <img class="dimension-img" src="{{asset('images/buy-comics-merchandise.png')}}" alt="DC MERCHANDISE">                    
+                  </li>                   
+                  <li  class="d-flex">
+                    <a class="tag" href="#">SUBSCRIPTION</a>
+                    <img class="dimension-img" src="{{asset('images/buy-comics-subscriptions.png')}}" alt="SUBSCRIPTION">                    
+                  </li>                   
+                  <li  class="d-flex">
+                    <a class="tag" href="#">COMIC SHOP LOCATOR</a>
+                    <img class="dimension-img" src="{{asset('images/buy-comics-shop-locator.png')}}" alt="COMIC SHOP LOCATOR">                    
+                  </li>
+                </ul>
+            </div>
+        </div>
+
         
-        <div></div>
+        
+        
     </section>
 
 @endsection

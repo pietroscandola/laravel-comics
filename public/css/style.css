@@ -301,3 +301,18 @@ button {
 #comic .text-lightblue {
   color: #00a9df;
 }
+#comic .dimension-img {
+  height: 50px;
+  filter: grayscale(0);
+}
+#comic .lista {
+  display: flex;
+  justify-content: center;
+}
+#comic .lista li {
+  padding: 0 40px;
+}
+#comic .tag {
+  text-decoration: none;
+  color: gray;
+}
