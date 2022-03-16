@@ -45,12 +45,14 @@ header {
         font-weight: bold;
         padding: 60px 10px;
         &.active {
-            color: dodgerblue;
             border-bottom: 5px solid dodgerblue;
         }
         a {
             color: black;
             text-decoration: none;
+            &.active {
+                color: dodgerblue;
+            }
         }
     }
     input {
