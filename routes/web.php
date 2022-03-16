@@ -30,7 +30,10 @@ Route::get('/comics/{id}', function ($id) {
         abort('404');
     }
     $comic = $comics[$id];
-    return view('comic', compact('comic'));
+
+    $prev = ($id == 0) ? null : $id - 1;
+    $next = $id === count($comics) - 1 ? null : $id + 1;
+    return view('comic', compact('comic', 'prev', 'next'));
 })->name('comic');
 
 // Movies

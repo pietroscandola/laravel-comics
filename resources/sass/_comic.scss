@@ -87,7 +87,7 @@
     }
     .dimension-img {
         height: 50px;
-        filter: grayscale(0);
+        filter: invert(1);
     }
     .lista {
         display: flex;
@@ -99,5 +99,36 @@
     .tag {
         text-decoration: none;
         color: gray;
+    }
+    .comic-nav {
+        position: fixed;
+        top: 50%;
+        transform: translate(-50%);
+        &.prev {
+            left: 10px;
+            animation: bounce-left 0.5s infinite linear;
+        }
+        &.next {
+            right: 10px;
+            animation: bounce-right 0.5s infinite linear;
+        }
+    }
+}
+
+@keyframes bounce-left {
+    from {
+        left: 10px;
+    }
+    to {
+        left: 30px;
+    }
+}
+
+@keyframes bounce-right {
+    from {
+        right: 10px;
+    }
+    to {
+        right: 30px;
     }
 }

@@ -17,8 +17,7 @@
                 <h1>{{ $comic['title']}}</h1>
                 <div class="bg-green">
                     <div class="price">
-                        <p><span class="green">U.S. Price:</span><span class="white">{{ $comic['price']}}</span></p>
-                        
+                        <p><span class="green">U.S. Price:</span><span class="white">{{ $comic['price']}}</span></p>                        
                     </div>
                     <div class="available">AVAILABLE</div>
                     <div>
@@ -98,6 +97,22 @@
                 </ul>
             </div>
         </div>
+
+        @isset($prev)
+        <div class="comic-nav prev">
+            <a href="{{ route('comic',['id' => $prev])}}">
+                <i class="fa-solid fa-angle-left fa-4x"></i>
+            </a>
+        </div>
+        @endisset
+
+        @isset($next)
+        <div class="comic-nav next">
+            <a href="{{ route('comic',['id' => $next])}}">
+                <i class="fa-solid fa-angle-right fa-4x"></i>
+            </a>
+        </div>
+        @endisset
 
         
         

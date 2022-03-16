@@ -305,7 +305,7 @@ button {
 }
 #comic .dimension-img {
   height: 50px;
-  filter: grayscale(0);
+  filter: invert(1);
 }
 #comic .lista {
   display: flex;
@@ -317,4 +317,53 @@ button {
 #comic .tag {
   text-decoration: none;
   color: gray;
+}
+#comic .comic-nav {
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%);
+}
+#comic .comic-nav.prev {
+  left: 10px;
+  -webkit-animation: bounce-left 0.5s infinite linear;
+          animation: bounce-left 0.5s infinite linear;
+}
+#comic .comic-nav.next {
+  right: 10px;
+  -webkit-animation: bounce-right 0.5s infinite linear;
+          animation: bounce-right 0.5s infinite linear;
+}
+
+@-webkit-keyframes bounce-left {
+  from {
+    left: 10px;
+  }
+  to {
+    left: 30px;
+  }
+}
+
+@keyframes bounce-left {
+  from {
+    left: 10px;
+  }
+  to {
+    left: 30px;
+  }
+}
+@-webkit-keyframes bounce-right {
+  from {
+    right: 10px;
+  }
+  to {
+    right: 30px;
+  }
+}
+@keyframes bounce-right {
+  from {
+    right: 10px;
+  }
+  to {
+    right: 30px;
+  }
 }
