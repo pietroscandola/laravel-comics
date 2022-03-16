@@ -23,6 +23,16 @@ Route::get('/comics', function () {
     return view('comics');
 })->name('comics');
 
+// Singolo Comic
+Route::get('/comics/{id}', function ($id) {
+    $comics = config('comics');
+    if (!is_numeric($id) || $id < 0 || $id >= count($comics)) {
+        abort('404');
+    }
+    $movie = $comics[0];
+    return view('comic', compact('movie'));
+})->name('comic');
+
 // Movies
 Route::get('/movies', function () {
     return view('movies');

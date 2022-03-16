@@ -13,11 +13,13 @@
         <button class="pos-absolute">CURRENT SERIES</button>
 
         <div class="cards">
-            @foreach($comics as $comic)
+            @foreach($comics as $index => $comic)
                 <div class="card">
-                    <figure>
-                    <img src="{{ $comic['thumb']}}" alt="{{ $comic['series'] }}" />
-                    </figure>            
+                    <a href="{{ route("comic", ['id' => $index]) }}">
+                      <figure>
+                        <img src="{{ $comic['thumb']}}" alt="{{ $comic['series'] }}" />
+                      </figure>
+                    </a>                                
                     <h4>{{ $comic['series'] }}</h4>
                 </div>
             @endforeach           

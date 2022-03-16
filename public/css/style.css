@@ -163,7 +163,11 @@ button {
 .cards .card figure {
   overflow: hidden;
   width: 180px;
-  height: 180px;
+  height: auto;
+}
+.cards .card figure img {
+  width: 100%;
+  height: auto;
 }
 .cards .card h4 {
   color: white;
@@ -209,4 +213,91 @@ button {
 }
 .bg-lightblue img {
   height: 50px;
+}
+
+#comic .bg-dodgerblue {
+  background-color: dodgerblue;
+  margin-bottom: 40px;
+}
+#comic #img {
+  margin-top: -230px;
+  padding-bottom: 20px;
+}
+#comic .d-flex {
+  display: flex;
+}
+#comic .d-flex .description {
+  padding: 10px;
+}
+#comic .d-flex .description .bg-green {
+  display: flex;
+  background-color: #55ba59;
+  height: 50px;
+  align-items: center;
+  margin: 20px 0;
+  padding: 0 30px;
+}
+#comic .d-flex .advertising {
+  padding: 10px;
+}
+#comic .available {
+  flex: 1;
+  text-align: right;
+  padding: 0 30px;
+}
+#comic .price {
+  display: flex;
+  justify-content: flex-end;
+}
+#comic .flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#comic .arrow-down {
+  font-size: 12px;
+}
+#comic .green {
+  color: lightgreen;
+}
+#comic .white {
+  color: white;
+}
+#comic .text {
+  line-height: 1.5rem;
+}
+#comic .bg-gray {
+  background-color: #f6f6f6;
+}
+#comic .boxs {
+  display: flex;
+  margin-top: 50px;
+  padding: 30px 0;
+}
+#comic .boxs .talents {
+  padding: 10px;
+  width: 50%;
+}
+#comic .boxs .specs {
+  padding: 10px;
+  width: 50%;
+}
+#comic .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+#comic .row .col-9 {
+  display: flex;
+  flex-basis: 60%;
+}
+#comic .row .col {
+  display: flex;
+  flex-basis: 40%;
+}
+#comic .color-text {
+  color: #003f80;
+}
+#comic .text-lightblue {
+  color: #00a9df;
 }

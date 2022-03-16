@@ -27,7 +27,11 @@ button {
         figure {
             overflow: hidden;
             width: 180px;
-            height: 180px;
+            height: auto;
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
         h4 {
             color: white;
